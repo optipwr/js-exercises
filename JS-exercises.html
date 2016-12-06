@@ -1,0 +1,125 @@
+<script type="text/javascript">
+	// Example One
+
+	// var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	// var response = prompt("What day is it?")
+
+	// if ((response == 0) || (response == 6)) {
+	// 	console.log("Sleep in it's " + daysOfWeek[response]);
+	// }
+	// else {
+	// 	console.log("Go to work, it's " + daysOfWeek[response]);
+	// }
+
+	// Exmaple Two
+
+	// var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	// var response = prompt("What day is it?")
+
+	// if ((daysOfWeek.indexOf(response)) == 0 || (daysOfWeek.indexOf(response) == 6)) {
+	// 	console.log("It's " + response + " Sleep in.")
+	// }
+	// else {
+	// 	console.log("It's " + response + " Go to work.")
+	// }
+
+	// Exmaple Three
+
+	// switch (new Date().getDay()) {
+	// 	case 0:
+	// 		day = "Sleep in";
+	// 		break;
+	// 	case 1:
+	// 		day = "Go to work!";
+	// 		break;
+	// 	case 2:
+	// 		day = "Go to work!";
+	// 		break;
+	// 	case 3:
+	// 		day = "Go to work!";
+	// 		break;
+	// 	case 4:
+	// 		day = "Go to work!";
+	// 		break;
+	// 	case 5:
+	// 		day = "Go to work!";
+	// 		break;
+	// 	case 6:
+	// 		day = "Sleep in";
+	// 		break;	
+	// }
+	// console.log(day);
+
+	// Exercise 3
+
+	//input for bill number
+
+	//input for level of service
+
+	// function calcBill(bill, service) {
+		
+	// 	var tip;
+	// 	if(service == "good") {
+	// 		tip = bill * .2
+	// 	}
+	// 	else if(service == "fair"){
+	// 		tip = bill * .15
+	// 	}
+	// 	else {
+	// 		tip = bill * .1
+	// 	}
+	// 	console.log("This is your total: " + (bill += tip) + ".");
+	// }
+
+	// var bill = Number(prompt("What is your total?"));
+	// var service = prompt("How was your service?");
+	// calcBill(bill, service);
+
+	// Exercise 2
+
+	// var arrayMonthDays = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
+	var arrayMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+	var monthResp = Number(prompt("Please input a month(1 - 12)"));
+	var yearResp = Number(prompt("Please input a year(ex. 1996)"));
+
+	monthResp = arrayMonths[monthResp - 1];
+
+	var calcResponse = new Date(monthResp + yearResp);
+	console.log("Your input was " + calcResponse);
+
+	if (yearResp % 4 == 0) {
+		console.log("This is a leap year");
+	}
+	else {
+		console.log("This is not a leap year.");
+	}
+
+
+	// JTs Example
+	// function calcLeapYear(year){
+	// 	if(year % 4 === 0){
+	// 		if(year % 100 !== 0){
+	// 			return "leap year";
+	// 		}
+	// 		else {
+	// 			if (year % 400 === 0){
+	// 				return "leap year";
+	// 			}
+	// 			else {
+	// 				return "not a leap year";
+	// 			}
+	// 		}
+	// 	}
+	// 	else {
+	// 		return "not a leap year";
+	// 	}
+	// }
+	// console.log(calcLeapYear(1996));
+
+	// if(calcLeapYear(1996) == "leap year") {
+	// 	console.log("It works!");
+	// }
+
+
+</script>

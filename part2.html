@@ -1,0 +1,68 @@
+<script type="text/javascript">
+
+// Arrays
+	// var student1= "Sean";
+	// var student2= "Drew";
+	// var student3= "Daniel";
+	// var student4= "Kyle";
+
+	// // Arrays!! a single variable with a numbered list of parts.
+	// var students = [];
+	// students = ["Sean", "Drew", "Daniel", "Kyle"];
+	// // console.log(students);
+
+	// var nfcSouth1 = "Falcons";
+	// var nfcSouth2 = "Saints";
+	// var nfcSouth3 = "Panthers";
+	// var nfcSouth4 = "Bucs";
+
+	// var nfcSouth = ["Falcons", "Saints", "Panthers", "Bucs"];
+
+	// // Any data type can go in any position
+	// // booleans
+	// // numbers
+	// // strings
+	// // objects
+	// // arrays
+
+	// // in an array, the first element, unless otherwise declared, is always 0.
+
+	// console.log(nfcSouth[0]);
+	// console.log(nfcSouth[3]);
+
+	// // Cool methods for an array...
+	// console.log(students);
+	// students.pop();
+	// console.log(students);
+	// students.push("Ryan");
+	// console.log(students);
+
+	var myArray = ["Amber", "Sarah", "Casey", "Michael"];
+	var response = prompt("Please enter your name.");
+	var found = false;
+
+	for (var i = 0; i < myArray.length; i++) {
+		if (myArray[i] == response) {
+			found = true;
+			break;
+		}
+
+	}
+	if(found == true) {
+		console.log("You are in the class");
+	}
+	else myArray.push(response);
+
+	// if (response == myArray[0] || response == myArray[1] || response == myArray[2] || response == myArray[3]) {
+	// 	console.log("You are in the class!");
+	// }
+	// else {
+	// 	myArray.push(response);
+	// }
+
+	// var seatNum = prompt("Pick a seat number.");
+	// myArray.splice(seatNum - 1, 0, response);
+	// console.log(myArray);
+
+	
+</script>
